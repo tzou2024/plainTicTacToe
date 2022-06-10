@@ -19,6 +19,7 @@ h3{
     grid-template-rows: 170px 170px 170px;
     grid-template-columns: 170px 170px 170px;
     background-color: red;
+    border: 2.5px solid;
     border-radius: 5px;
 }
 
@@ -27,13 +28,13 @@ h3{
     align-items: center;
     justify-content: center;
     background-color: #ECE6C2;
-    border: 10px solid;
+    border: 5px solid;
     cursor: pointer;
     color: black
 }
 
 .box:hover{
-    border: 5px solid;
+    border: 2.5px solid;
 }
 
 .win{
