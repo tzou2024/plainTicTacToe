@@ -33,7 +33,7 @@ const displayHist = (alt) =>{
     else{
         oHist++
     }
-    updation.innerHTML = `X Win: ${xHist} | O Win: ${oHist}`
+    updation.innerHTML = "<pre>X Win: " + xHist + "     |     " + "O Win: " + oHist + "</pre>"
 }
 const checkwins = (winPiece) =>{
     let winCombos = [[0,1,2],[3,4,5],[6,7,8],
