@@ -15,8 +15,8 @@ h2{
 
 .model {
     display: grid;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 170px 170px 170px;
+    grid-template-columns: 170px 170px 170px;
     background-color: red;
     border-radius: 5px;
 }
