@@ -5,6 +5,9 @@
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>sds</title>
@@ -20,7 +23,7 @@
         <script src="js/app.js" async defer></script>
         <div class="container">
         <h1>Tic Tac Toe</h1>
-        <h2 id = "scoreCounter"></h2>
+        <h3 id = "scoreCounter"></h3>
         <div class="model">
             <div class="box" id="b0"></div>
             <div class="box" id="b1"></div>
@@ -33,7 +36,8 @@
             <div class="box" id="b8"></div>
         </div>
         
-        <button class="btn">RESET BOARD</button>
+        <button class="btn" id="rb">RESET BOARD</button>
+        <button class="btn" id="rt">RESET SCORE HIST</button>
     </div>
          
     </body>

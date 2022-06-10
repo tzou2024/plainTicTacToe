@@ -2,6 +2,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: #ECE6C2;
+    font-family: 'Nunito', sans-serif;
     
 }
 
@@ -9,8 +10,8 @@ h1{
     text-align: center;
 }
 
-h2{
-    text-align: center
+h3{
+    text-align: center;
 }
 
 .model {
@@ -37,5 +38,9 @@ h2{
 
 .win{
     color: red
+}
+
+#rt {
+    float: right
 }
 

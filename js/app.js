@@ -125,10 +125,22 @@ for (let i = 0;i<board.length;i++){
     )
 }
 
-function clickHandler(event) {
+function clickReset(event) {
     console.log('Button Clicked');
     resetBoard()
     breakFlag = 0
  }
-const btn = document.querySelector('.btn');
-btn.addEventListener('click', clickHandler);
+const btn1 = document.getElementById("rb")
+btn1.addEventListener('click', clickReset);
+
+function clickResetScore(event) {
+    console.log('Button Clicked');
+    resetBoard()
+    breakFlag = 0
+    xHist = 0
+    oHist = 0
+    let scoring = document.getElementById("scoreCounter")
+    scoring.innerHTML = ""
+ }
+const btn2 = document.getElementById("rt")
+btn2.addEventListener('click', clickResetScore);
