@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #ECE6C2;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+.model {
+    display: grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECE6C2;
+    border: 10px solid;
+    cursor: pointer;
+    color: black
+}
+
+.box:hover{
+    border: 5px solid;
+}
+
+.win{
+    color: red
+}
+
