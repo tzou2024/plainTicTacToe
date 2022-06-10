@@ -9,6 +9,10 @@ h1{
     text-align: center;
 }
 
+h2{
+    text-align: center
+}
+
 .model {
     display: grid;
     grid-template-rows: 200px 200px 200px;

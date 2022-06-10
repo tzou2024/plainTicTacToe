@@ -1,10 +1,8 @@
-
-
-
-
 let round = 0
 let board = document.getElementsByClassName("box")
 let breakFlag
+let xHist = 0
+let oHist = 0
 
 console.log(board)
 
@@ -20,12 +18,23 @@ const resetBoard = () => {
         if(board[i].classList.contains('win')){
             board[i].classList.remove('win')
         }
+        
         };
+        
 
     round = 0
 }
 
-
+const displayHist = (alt) =>{
+    updation = document.getElementById("scoreCounter")
+    if (alt == 0){
+        xHist++
+    }
+    else{
+        oHist++
+    }
+    updation.innerHTML = `X Win: ${xHist} | O Win: ${oHist}`
+}
 const checkwins = (winPiece) =>{
     let winCombos = [[0,1,2],[3,4,5],[6,7,8],
                     [0,3,6],[1,4,7],[2,5,8],
@@ -92,6 +101,7 @@ for (let i = 0;i<board.length;i++){
                     }
                     alert("X Win! Reset Board Using Button")
                     breakFlag = 1
+                    displayHist(0)
                 }
                 if(typeof oWin == 'object'){
                     for(let z=0;z<oWin.length;z++){
@@ -99,6 +109,7 @@ for (let i = 0;i<board.length;i++){
                     }
                     alert("O Win! Reset Board Using Button")
                     breakFlag = 1
+                    displayHist(1)
                 }
                 break
                 
